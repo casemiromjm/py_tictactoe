@@ -3,7 +3,7 @@ def set_board():
     return [[ "-" for _ in range(3)] for _ in range(3)]
 
 def show_board(board):
-    ''' function to show the game board '''
+    ''' function to show the game board on the terminal '''
     for row in board:
         print(row[0] + " | " + row[1] + " | " + row[2])
 
