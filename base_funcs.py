@@ -1,3 +1,5 @@
+''' base functions to a tictactoe match '''
+
 def set_board():
     ''' function to create the game board '''
     return [[ "-" for _ in range(3)] for _ in range(3)]

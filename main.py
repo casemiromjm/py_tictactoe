@@ -23,6 +23,7 @@ def main():
     ''' main function to play the game '''
     player_char = input("choose between X or O\n")
     player_char = player_char.upper()
+    print()
     
     while player_char != "X" and player_char != "O":
         player_char = input("You didn't choose a valid option, please choose between X or O\n")
@@ -40,6 +41,7 @@ def main():
     turn = random.choice(["computer", "player"])
 
     while True:
+        print(f"It's {turn}'s turn!")
         if turn == "player":
             row_player_move = int(input("Choose in which row you want to play\n")) - 1
             col_player_move = int(input("Choose in which column you want to play\n")) - 1
