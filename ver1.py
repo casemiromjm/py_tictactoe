@@ -1,9 +1,8 @@
-# this is the "GUI" version of the game
-# game version GUI
+# this is the "terminal" version of the game
+# game version 1
 
 import random
 import base_funcs
-import pygame
 
 def player_move(board, row_move, col_move, player_char):
     if base_funcs.valid_play(board, row_move, col_move):
@@ -22,12 +21,6 @@ def computer_move(board, computer_char):
 
 def main():
     ''' main function to play the game '''
-
-    pygame.init()
-    screen = pygame.display.set_mode((1280, 720))
-    clock = pygame.time.Clock()
-    running = True
-
     player_char = input("choose between X or O\n")
     player_char = player_char.upper()
     print()
